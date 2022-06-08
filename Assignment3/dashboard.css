@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color:rgba(58, 134, 255);
+    /* font-size: 20px; */
+    color: aliceblue;
+}
+.links{
+    background-color:rgb(255, 190, 11);
+    float: left;
+    padding: 40px;
+    color: aliceblue;
+    font-size: 20px;
+    margin: 30px;
+}
