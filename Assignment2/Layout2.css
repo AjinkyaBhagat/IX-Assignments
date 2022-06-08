@@ -1,24 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+}
 .logo{
-    width: 100px;
-    height: 100px;
+    height: 0;
 }
 .navigation{
     display: flex;
+    justify-content: space-between;
     background-color: brown;
     border: 1px solid black;
-    font-size: 30px;
     
 }
 .menu{
    
-    margin-left: 800px;
-    margin-top: 30px;
-}
-/* img{
-    border-radius:25px;
-} */
+  font-size: 25px;
+  margin: 37px 25px;
 
-header{
+}
+.menu a{
+    padding:10px;
+}
+
+h1{
     font-size: 50px;
     color: #c5302e;
     text-align: center;
@@ -31,32 +38,44 @@ header{
     justify-content: space-evenly;
 
 }
-
 .card{
-    border: 1px solid black;
-    padding: 15px;
+    box-shadow: 0 0 12px 5px;
     background-color: #f1f1f1;
     width: 15%;
+    border-radius: 10px;
+
 }
 .card-img{
     width: 100%;
+    object-fit: cover;
+    /* border-radius: 30px; */
 }
-.btn{
-    display: flex;
-}
-button{
-    background-color: #c5302e;
-    font-size: 20px;
-    margin-top: 20px;
+
+ button{
+    background-color: #0061ff;
+    color: #f1f1f1;
+    border-radius: 10px;
+    margin: 10px ;
     width: 80px;
+    height: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    
 }
-.btn-topic{
-    margin-left: 200px;
-    margin-right: 800px;
+.next-btn{
+    float: right;
+    margin-right: 80px;
 }
+.topic-btn{
+    float: left;
+}
+
 .image-container{
     position: relative;
     margin-top: 50px;
+}
+.blurimg{
+    opacity: 0.7;
 }
 
 .left {
@@ -69,10 +88,19 @@ button{
    
 }
 
-.footer{
+footer{
     display: flex;
     justify-content: space-between;
+    background-color: #c5302e;
 }
-  .social{
-      float: right;
-  }
+.social{
+    float: right;
+}
+
+h2{
+      font-size: 50px;
+}
+
+.addr h3{
+    color: #f1f1f1;
+}
