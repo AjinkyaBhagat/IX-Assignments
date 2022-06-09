@@ -5,33 +5,200 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dashboard.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
     <title>Dashboard</title>
 </head>
 <body>
-    
-        <header class="head-bar">
-            <h1>NOTISPHERE </h1>
-            <i class="fa fa-bars " aria-hidden="true"></i>
-            <img src="" alt=""/>
-        </header>
-
-            <div class="links">          
-                    <h1>Dashboard</h1>
-                    <ul>
-                        <li>
-                            <a href="https://www.akc.org/wp-content/uploads/2019/03/AdobeStock_491912561-500x500.jpeg">Labrador</a>
-                        </li>
-                        <li>
-                            <a href="https://www.thesprucepets.com/thmb/CMXBgaQRx_Ms0NHa8miG-tVtRrI=/2400x2400/smart/filters:no_upscale()/names-for-german-shepherds-4797840-hero-ed34431ad20c42c6894b4a29765b4d68.jpg">German Shepherd</a>
-                        </li>
-                        <li>
-                            <a href="https://i.pinimg.com/564x/b8/16/47/b8164723dd77dab0e1333ba6b9f9c1df.jpg">Husky</a>
-                        </li>
-                    </ul>
+        <header>
+            <div class="header-main">
+                <div class="head-bar">
+                    <h3>NOTISPHERE <span><i class="fa fa-bars " aria-hidden="true"></i></span></h3>  
+                </div>
+                <div class="head-bar-right">    
+                    <img src="/Assets/multipleLogo.png" alt="icon" width="50px" height="50px"/>
+                    <select class="head-select">
+                        <option>Provider & Admin</option>
+                    </select>
+                </div>
             </div>
+        </header>
+        <div class="nav-dashboard">          
+            <h1><i class="fa fa-cloud" aria-hidden="true"></i><h3>Dashboard</h3></h1>
+            <ul>
+                <li>
+                    <i class="fa fa-smile-o" aria-hidden="true"></i> <a href="https://www.thesprucepets.com/thmb/CMXBgaQRx_Ms0NHa8miG-tVtRrI=/2400x2400/smart/filters:no_upscale()/names-for-german-shepherds-4797840-hero-ed34431ad20c42c6894b4a29765b4d68.jpg">Menu item 1</a>
+                </li>
+                <li>
+                    <i class="fa fa-smile-o" aria-hidden="true"></i> <a href="https://i.pinimg.com/564x/b8/16/47/b8164723dd77dab0e1333ba6b9f9c1df.jpg">Menu Item 2</a>
+                </li>
+                <li>
+                    <i class="fa fa-smile-o" aria-hidden="true"></i> <a href="https://i.pinimg.com/564x/b8/16/47/b8164723dd77dab0e1333ba6b9f9c1df.jpg">Menu Item 3</a>
+                </li>
+            </ul>
+        </div>
+        <div class="dashboard">
+            <div class="progress-bar">
+                <h3>Dashboard</h3>
+                <h4>Home</h4>
+                    <div >
+                        <button class="progress-btn" type="menu">In Progress</button> 
+                        <button class="progress-btn" type="menu">Completed</button>
+                        <button class="progress-btn" type="menu">All</button>
+                        <img class="icons" src="/Assets/multipleLogo.png" alt="icons"/>
+                        <img class="icons" src="/Assets/multipleLogo2.png" alt="icons"/>
+                        <img class="icons" src="/Assets/multipleLogo3.png" alt="icons"/>
+                        <hr>
+                   </div>
+                   <div>
+                        <select class="select-box">
+                            <option>Type</option>
+                        </select>
+                        <select class="select-box">
+                            <option>classification</option>
+                        </select>
+                        <select class="select-box">
+                            <option>Progress</option>
+                        </select>
+                        <select class="select-box">
+                            <option>Days Since Notified</option>
+                        </select>
+                        <select class="select-box">
+                            <option>Category</option>
+                        </select>
+                        <select class="select-box">
+                            <option>Satus</option>
+                        </select>
+                        <select class="select-box">
+                            <option>Medium of Recall</option>
+                        </select>
+                        <button class="clear-btn" type="reset">X Clear All Filter</button>
 
-   
-    
-    
+                        <select class="select-box">
+                            <option>SORT BY</option>
+                            <option>Doctor</option>
+                            <option>User</option>
+                        </select>
+                   </div>
+            </div>    
+        </div>       
+      <!-- Details code -->
+        <div class="card-div">
+            <div class="card-comp" >
+                <div class="btn-card">
+                    <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                        <div class="btn-car1">
+                            <button class="btn-ak" type="submit">AKNOWLEDGED</button>
+                            <button class="btn-ur" type="submit">URGENT</button>
+                        </div>
+                </div>            
+                <div class="mai-card-comp">
+                    <div class="card-head-details">
+                        <p>05-06-2022</p>
+                        <h4>SUP_TEST</h4>
+                        <h3>qa12345</h3>
+                        <h6>Recall id-qoyeregefcm</h6>
+                    </div>
+                    <div class="two-card-holder">
+                        <div class="two-c1">
+                            <i class="fa fa-spinner fa-4x " aria-hidden="true"></i>
+                            <h2>Progress</h2>
+                        </div>
+                        <div class="two-c2">
+                            <h1>2</h1>
+                            <h3>05/1/2022</h3>
+                            <p>Days Since <br>Notified</p>
+                        </div>
+                    </div>
+                    <div class="bullets-points">
+                        <ul>
+                            <li>Site-1</li>
+                            <li>Category:blood product</li>
+                        </ul>
+                    </div>
+                    <p class="side1"><span><i class="fa fa-github-square" aria-hidden="true"></i></span>Not Yet Cerified</p>
+                    <p class="side2"><span><i class="fa fa-github-square" aria-hidden="true"></i></span> Advisory</p>
+                    <button class="card-submit"> View</button>
+                </div>
+            </div>
+            <!-- card1 done -->
+            <div class="card-comp" >  
+                <div class="btn-card">
+                    <i class="fa fa-envelope fa-2x " aria-hidden="true"></i>
+                        <div class="btn-car1">
+                            <button class="btn-ak" type="submit">AKNOWLEEDGED</button>
+                            <button class="btn-ur" type="submit">URGENT</button>
+                        </div>
+                </div>            
+                <div class="mai-card-comp">
+                    <div class="card-head-details">
+                        <p>05-06-2022</p>
+                        <h4>SUP_TEST</h4>
+                        <h3>qa12345</h3>
+                        <h6>Recall id-qoyeregefcm</h6>
+                    </div>
+                    <div class="two-card-holder">
+                        <div class="two-c1">
+                            <i class="fa fa-spinner fa-4x" aria-hidden="true"></i>
+                            <h2>Progress</h2>
+                        </div>
+                        <div class="two-c2">
+                            <h1>2</h1>
+                            <h3>05/1/2022</h3>
+                            <p>Days Since <br>Notified</p>
+                        </div>
+                    </div>
+                    <div class="bullets-points">
+                        <ul>
+                            <li>Site-1</li>
+                            <li>Category:blood product</li>
+                        </ul>
+                    </div>
+                    <p class="side1"><span><i class="fa fa-github-square" aria-hidden="true"></i></span>Not yet Cerified</p>
+                    <p class="side2">||<span><i class="fa fa-github-square" aria-hidden="true"></i></span> Advisory</p>
+                    <button class="card-submit"> View</button>
+                </div>
+            </div>
+            <!-- car2 done     -->
+            <div class="card-comp" > 
+                <div class="btn-card">
+                    <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                    <div class="btn-car1">
+                        <button class="btn-ak" type="submit">AKNOWLEDGED</button>
+                        <button class="btn-ur" type="submit">URGENT</button>
+                    </div>
+                </div>             
+                <div class="mai-card-comp">
+                    <div class="card-head-details">
+                        <p>05-06-2022</p>
+                        <h4>SUP_TEST</h4>
+                        <h3>qa12345</h3>
+                        <h6>Recall id-qoyeregefcm</h6>
+                    </div>
+                    <div class="two-card-holder">
+                        <div class="two-c1">
+                            <i class="fa fa-spinner fa-4x " aria-hidden="true"></i>
+                            <h2>Progress</h2>
+                        </div>
+                        <div class="two-c2">
+                            <h1>2</h1>
+                            <h3>05/1/2022</h3>
+                            <p>Days Since <br>Notified</p>
+                        </div>
+                    </div>
+                    <div class="bullets-points">
+                        <ul>
+                            <li>Site-1</li>
+                            <li>Category:blood product</li>
+                        </ul>
+                        <p class="side1"><span><i class="fa fa-github-square" aria-hidden="true"></i></span>Not Yet Cerified</p>
+                        <p class="side2"><span><i class="fa fa-github-square" aria-hidden="true"></i></span> Advisory</p>
+                    </div>
+                    <button class="card-submit"> View</button>
+                </div>
+            </div>
+        </div>             
 </body>
 </html>
+

@@ -1,17 +1,180 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Didact Gothic', sans-serif;
 }
-header{
-    background-color:rgba(58, 134, 255);
-    /* font-size: 20px; */
-    color: aliceblue;
+.header-main{
+    display: flex;
+    background-color:black;
+    justify-content: space-between;
 }
-.links{
-    background-color:rgb(255, 190, 11);
+.head-select{
+    background-color:rgba(58, 134, 255); 
+   border: none;
+    color: white;
+    float: right;
+    margin: 20px;
+}
+.head-bar h3{
+    margin-left: 30px;
+    font-size: 30px;
+    color: white;
+    margin-top: 10px;
+}
+
+.progress-bar h3{
+color:black;
+font-size: 30px;
+margin: 20px;
+padding: 10px;
+}
+.nav-dashboard{
     float: left;
-    padding: 40px;
-    color: aliceblue;
+    padding: 20px;
+    color: #f5f5f5;
     font-size: 20px;
-    margin: 30px;
+    height: 100vh;
+    padding: 30px;
+    background-color: rgba(58, 134, 255);
+    box-shadow: 2px 5px 10px #919090;
+}
+.nav-dashboard a{
+    color: white;
+}
+.nav-dashboard li{
+    margin-top: 20px;
+}
+
+.icons{
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    float: right;
+}
+
+.progress-btn{
+    background: none;
+    padding: 10px;
+    margin-left: 20px;
+    background-color:rgba(58, 134, 255);;
+    border-radius: 7px;
+    color: white;
+    border: 0.5px solid black;
+    width: 100px;
+}
+.select-box{
+    border-color: rgba(58, 134, 255);
+    padding: 8px;
+    border-radius: 10px;
+    color: rgba(58, 134, 255);
+    margin: 15px;
+}
+.clear-btn{
+    color: rgba(58, 134, 255);
+    border-color: rgba(58, 134, 255);
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+}
+.btn-card{
+    display: flex;
+    justify-content: space-between;
+}
+.btn-ak{
+    background-color: rgb(92, 250, 92);
+    border: none;
+    padding: 10px;
+    color: whitesmoke;
+    border-radius: 20px;
+}
+.btn-ur{
+    background-color:red;
+    border: none;
+    padding: 10px;
+    color: whitesmoke;
+    border-radius: 20px;
+}
+
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-head-details h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgba(58, 134, 255);
+}
+.card-head-details h4{
+    margin-top: 10px;
+}
+
+.card-comp{
+    width:20rem;
+    height:40rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    box-shadow: 5px 10px 18px #888888;
+    border-radius: 15px;
+}
+.card-head-details{
+    align-items: left;
+}
+
+.two-card-holder{
+    margin-top: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    height: auto;
+    gap: 3rem;
+}
+
+.two-c1{
+    width: auto;
+    height: auto;
+    border: 1px solid rgba(58, 134, 255);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 8px 10px 18px #888888;
+    margin-left: 25px;
+}
+
+.two-c2{
+    width: auto;
+    height: auto;
+    box-shadow: 8px 10px 18px #888888;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid rgba(58, 134, 255);
+}
+
+.card-submit{
+    width: 100%;
+    background-color: rgba(58, 134, 255);
+    border: none;
+    color: whitesmoke;
+    border-radius: 20px;
+    padding: 10px;
+}
+.card-comp{
+    height: auto;
+}
+.card-head-details h5{
+    color:rgba(58, 134, 255);
+}
+
+.card-div{
+    display: flex;
+    margin: 20px;
+    justify-content: space-evenly;
+}
+.side1{
+    display: inline-block;
+    margin: 20px;
+    margin-left: 50px;
+}
+.side2{
+    display: inline-block;
 }
