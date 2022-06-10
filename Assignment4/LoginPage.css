@@ -1,0 +1,69 @@
+*{
+    font-family: 'Sawarabi Gothic', sans-serif;
+}
+.main-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.container{
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+}
+.image{
+    text-align: center;
+    width:50%;
+    height: auto;
+}
+.image p{
+    margin-bottom: 0px;
+}
+.login-conatiner {
+    margin-top: 30px;
+    width:calc(100% - 50%);
+}
+.login-conatiner h1,p{
+    text-align: center;
+}
+.login-conatiner h1{
+    color:#103783;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.form-label-input input,label{
+    margin-top: 10px;
+    margin-bottom:0px;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 5px;  
+}
+button{
+    color:whitesmoke;
+    background-color: #59d102;
+    margin-top: 12px;
+    padding: 17px 21px;
+    outline:none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    font-weight: bold;
+    border: none;
+}
+
+.input-email{
+    font-family: FontAwesome;
+}
+.input-password{
+    font-family: FontAwesome; 
+}
+.footer{
+    font-size: 13px;
+}
