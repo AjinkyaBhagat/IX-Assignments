@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link  rel="stylesheet" href="RegistrationPage.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+     <header>
+        <div class="navbar">
+            <img src="/Assets/NavbarLogo.png" alt="logo"/>    
+            <div class="nav-bar-buttons">
+               <a class="a-tag" href="#">Account</a>
+               <a class="a-tag"href="#">Client</a>
+               <a class="a-tag"href="#">Documents</a>
+               <a class="a-tag" href="#">Reports</a>
+               <select class="select-tag"><option>Accounting</option></select>
+               <select class="select-tag"><option>Definations</option></select>
+            </div>
+        </div>
+        <div class="head-icons">
+            <i class="fa fa-plus icon" aria-hidden="true"></i>
+            <i class="fa fa-question-circle icon" aria-hidden="true"></i>
+            <h1>|</h1>
+            <h2>AB</h2>
+            <i class="fa fa-angle-down"></i>
+        </div>
+    </header>
+    <a class="title" href="#" title="clients">Clients </a><span>/ Add new Client</span>
+    <h1 class="title">Add New Client -vbng</h1>
+    <hr>
+    <!-- Main container -->
+    <div class="main-container">
+        <div class="sidebar">
+            <h3>Contact</h3>
+            <div class="radio">
+                <input class="radio-btn" type="radio" checked>Client information<br>
+                <input class="radio-btn" type="radio"> Main point of content<br>
+                <h3>Settings</h3>
+                <input class="radio-btn" type="radio"> Accounting Cofiguration<br>
+                <input class="radio-btn" type="radio"> Bank Accounts<br>
+                <input class="radio-btn" type="radio"> Costs & Fees<br>
+                <input class="radio-btn" type="radio"> Invoice<br>
+                <input class="radio-btn" type="radio"> PIF Options<br>
+                <input class="radio-btn" type="radio"> Filling & Judgment <br>
+            </div>
+        </div>
+        <div class="registration-page">
+            <div class="registration-Form">
+                <form>
+                    <div class="title">
+                        <h1 >Client information</h1><br>
+                        <h3 >Indicate if the client is a business or indiviual</h3><br>
+                    </div>   
+                    <div class="radio-group" >
+                        <input type="radio" checked> Business
+                        <input  type="radio"> Indiviual
+                    </div>
+                    <hr>
+                    <h3 class="all-titles">Enter the client name</h3>
+                    <div class="client-name-div">
+                        <div class="client-name">
+                            <label class="label">Client Names <span class="star">*</span></label><br>
+                            <input class="input" type="text" placeholder="vbng"/>
+                        </div>
+                        <div class="client-name2">
+                            <label class="label">Doing Business As</label><br>
+                            <input class="input" type="text" placeholder="Enter DBA or fictitious name"/>
+                        </div>
+                    </div>
+                    <hr>
+                    <h3 class="all-titles">Create a client Id,enter their FEIN,and select client type.</h3>
+                    <div class="client-id-div">
+                        <div class="client-id">
+                            <label class="label">Client Id(Limit of 10 Characters)<span class="star">*</span></label><br>
+                            <input class="input" placeholder="Enter client ID"/>
+                        </div>
+                        <div class="client-FEIN">
+                            <label class="label">FEIN</label><br>
+                            <input class="input" placeholder="Enter FEIN">
+                        </div>
+                        <div class="client-type">
+                            <label class="label">Client Type<span class="star">*</span></label>
+                            <select class="select">
+                                <option>Select Type</option>
+                            </select>
+                        </div>
+                    </div>
+                    <hr>
+                    <h3 class="all-titles">Assign to 1 or more sets.Use sets to group like clients together and pull reports for all clients in that set.(optiona)</h3>
+                    <div class="client-set-code">
+                        <div class="client-set-code-select">
+                            <label class="label">Client Set Code</label>
+                            <select class="client-setcode-select-box">
+                                <option>Select Type</option>
+                            </select>
+                        </div>
+                            <button class="client-set-code-btn" type="submit">⚙️Manage Code</button>
+                    </div>
+                    <hr>
+                    <h3 class="all-titles">Entre address (optional).More addresses can be saved as additional contact</h3>
+                    <div class="address">
+                        <div class="detail-address">
+                            <label class="label">Attention</label><br>
+                            <input class="input" type="text" placeholder="Enter address"/>
+                            <label class="label">Street Address</label><br>
+                            <input class="input" type="text" placeholder="Enter Street address"/>
+                            <label class="label">Street Address</label><br>
+                            <input class="input" type="text" placeholder="Enter apartment,suits,unit,floor,building,etc."/>
+                        </div>
+                        <div class="sub-address">
+                            <div class="zip">
+                                <label class="label">Zip Code/Postal Code</label><br>
+                                <input class="input" type="text" placeholder="00000"/>
+                            </div>
+                            <div class="city">
+                                <label class="label">City</label><br>
+                                <input class="input" type="text" placeholder="Enter City"/>
+                            </div>   
+                        </div>
+                        <div class="sub-address">
+                            <div class="state">
+                                <label class="label">State/Province</label><br>
+                                <input class="input" type="text" placeholder="Enter State/Province"/>
+                            </div>
+                            <div class="country">
+                                <label class="label">Country</label>
+                                <select class="country-select">
+                                    <option>Select Type</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="country-code">
+                        <div class="country-code-select">
+                            <label class="label">Country Code</label>
+                            <select class="country-code-select-box">
+                                <option>Select County Code</option>
+                            </select>
+                        </div>
+                            <button class="country-code-btn" type="submit">⚙️Manage Code</button>
+                    </div>
+                    <div class="time-zone">
+                        <div class="time-zone-select">
+                            <label class="label">Time Zone</label>
+                            <select class="time-zone-select-box">
+                                <option>Select time zone</option>
+                            </select>
+                        </div>
+                    </div>
+                    <hr>
+                    <h3 class="all-titles">Entre Website link (optional)</h3>
+                    <div class="website-link">
+                        <div class="website-link-div">
+                            <label class="label">Website Link</label><br>
+                            <input class="input" type="text" placeholder="Enter URL"/>
+                        </div>
+                    </div>    
+                    <hr>
+                    <h3 class="all-titles">Choose a pre-set color (optional)</h3>
+                    <h4 class="pre-sets-label">Assigning colors to your clients can help to visaually group them together or quickly distinguish them from one another.</h4>
+                    <div class="pre-set">
+                        <div class="pre-set-checkbox">
+                            <label class="label">Pre-set Colors</label>
+                            <div class="color-pallet">
+                                <label class="label-size blue" ></label>
+                                <label class="label-size sky-blue" ></label>
+                                <label class="label-size green" ></label>
+                                <label class="label-size orange" ></label>
+                                <label class="label-size yellow" ></label>
+                                <label class="label-size red" ></label>
+                                <label class="label-size pink" ></label>
+                                <label class="label-size purpal" ></label>
+                                <label class="label-size orange" ></label>
+                                <label class="label-size sky-blue" ></label>
+                                <label class="label-size yellow" ></label>
+                                <label class="label-size pink" ></label>
+                            </div>
+                        </div>
+                    </div>  
+                    <hr>
+                    <h3 class="all-titles">Enter notes(optional)</h3>
+                    <div class="notes">
+                        <div class="notes-div">
+                            <label class="label">Notes</label><br>
+                            <input class="input" type="text" placeholder="Enter any comments or notes"/>
+                        </div>
+                    </div>   
+                    <hr> 
+                    <h3 class="all-titles">Enter additional information by creating your own fields for client accounts (optional)</h3>
+                    <div class="custom-user-filed">
+                        <div class="custom-user-filed-div">
+                            <label class="label">Custom User Field</label><br>
+                            <input class="input" type="text" placeholder="Enter any comments or notes"/>
+                        </div>
+                    </div>  
+                    <hr> 
+                    <div class="buttons">
+                        <a href="#" title="clear">Clear Page</a>
+                        <button type="submit">Next ➜</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>        
