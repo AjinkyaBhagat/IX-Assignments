@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="websitelayout-bootstrap.css">
+    <title>Website layout Bootstrap</title>
+</head>
+<body>
+    <div class="container-fluid bg-dark sticky-top">
+        <nav class="navbar navbar-light navbar-expand-lg  navbar-dark">
+            <a href="#" class="navbar-brand">
+                <img class="d-inline-block" 
+                src="/Assets/footerLogo.png" height="50" width="80"/> 
+                <span class="d-sm-inline-block">ROYAL ENFIELD</span>
+            </a>
+            <button type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                class="navbar-toggler"
+                aria-controls="#navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link  dropdown-toggle active"
+                        id="#navbarDropdown" 
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        >Features
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Feature 1</a></li>
+                            <li><a class="dropdown-item" href="#">Feature 2</a></li>
+                            <li><a class="dropdown-item" href="#">Feature 3</a></li>
+                        </ul> 
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link active">Pricing</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link active">About</a>
+                    </li>
+                </ul>
+            </div>    
+        </nav>
+    </div>
+    <div class="container">
+        <h1 class="text-center mt-5 mb-5 " style="color:#FE2414">THE ROYAL ENFIELD STORY, SINCE 1901</h1>
+        <div class="row g-3">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="/Assets/c1.jpeg"/ alt="bike" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Royal Enfield</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, corporis assumenda enim aliquam laudantium at velit saepe a reprehenderit, consequuntur voluptate. Labore optio ea velit dolores quibusdam hic quis mollitia!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="/Assets/c2.jpeg"/ alt="bike" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Royal Enfield</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, corporis assumenda enim aliquam laudantium at velit saepe a reprehenderit, consequuntur voluptate. Labore optio ea velit dolores quibusdam hic quis mollitia!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="/Assets/c1.jpeg"/ alt="bike" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Royal Enfield</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, corporis assumenda enim aliquam laudantium at velit saepe a reprehenderit, consequuntur voluptate. Labore optio ea velit dolores quibusdam hic quis mollitia!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <button class="btn btn-lg btn-secondary mt-3">Privious</button>
+            <button class="btn btn-lg btn-primary mt-3">Next</button>
+            <button class="btn btn-lg btn-danger mt-3 float-end">Reset</button>
+        </div>
+    </div>
+    <div class="card border-0" style="width:100%">
+        <img src="/Assets/full-image.jpeg" class="img-fluid mt-3"/>
+        <div class="card-img-overlay">
+            <div class="card-body text-light">
+                <p class="card-subtitle display-4 font-weight-bolder">Royal Enfield</p>
+                <p class="card-text w-50 " style="font-size:1vw">Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing<br> elit. Quo, dolorum nisi. 
+                    Nobis nemo <br>quidem blanditiis, eos
+                    dolorem placeat<br> unde neque molestias nihil,
+                    at saepe? Qui molestias recusandae illum hic ad?</p>
+            </div>
+        </div>
+    </div>    
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-centre text-md-left">
+            <div class="row text-centre text-md-left">
+                <div class="col-md-6 col-lg-3 col-sm-12 mx-auto mt-4">
+                    <img src="/Assets/footerLogo.png" class="img-fluied" height="110px" width="150px"/>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-12 mx-auto mt-3">
+                    <h5 class="text-uppercase ab-4 font-weight-bold text-warning">Contact</h5>
+                    <p>
+                        <a href="#" class="text-white">Facebook</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white">Instagram</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white">Phone</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white">about</a>
+                    </p>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-12 mx-auto mt-3">
+                    <h5 class="text-uppercase ab-4 font-weight-bold text-warning">Contact</h5>
+                    <p>
+                        Survey no 14, Plot No. 6, Lane No.1 , Near Warje Octroi Post, Datta Digambar Colony Road, Pune, Maharashtra 411052
+                    </p>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-12 mx-auto mt-3">
+                    <h5 class="text-uppercase ab-4 font-weight-bold text-warning">Social Media</h5>
+                    <div class="row">
+                        <div class="col-lg-3">
+                        <h1>
+                            <img src="/Assets/icons-facebook.svg">
+                         </h1>
+                        </div>
+                        <div class="col-lg-3">
+                            <h1>
+                                <img src="/Assets/icons-instagram.svg">
+                        </div>
+                        <div class="col-lg-3">
+                            <h1>
+                                <img src="/Assets/icons-twitter.svg">
+                        </div>
+                        <div class="col-lg-3">
+                            <h1>
+                                <img src="/Assets/icon-whatsapp.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+</body>
+</html>
