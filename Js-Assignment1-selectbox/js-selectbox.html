@@ -19,25 +19,84 @@
                         <tr>
                             <th scope="col">First Name</th>
                             <th scope="col">Last Name</th>
+                            <th scope="col">Age</th>
+                            <th scope="col">email</th>
                             <th scope="col">Country</th>
                             <th scope="col">State</th>
                             <th scope="col">City</th>
                         </tr>
                     </thead>
                     <tbody id="table-body">
+                        <tr>
+                            <td scope="col">Ajinkya</td>
+                            <td scope="col">Bhagat</td>
+                            <td scope="col">23</td>
+                            <td scope="col">ajinkya@gmail.com</td>
+                            <td scope="col">India</td>
+                            <td scope="col">maharashtra</td>
+                            <td scope="col">pune</td>
+                        </tr>
+                        <tr>
+                            <td scope="col">shardul</td>
+                            <td scope="col">Bhingardive</td>
+                            <td scope="col">21</td>
+                            <td scope="col">ajinkya@gmail.com</td>
+                            <td scope="col">India</td>
+                            <td scope="col">maharashtra</td>
+                            <td scope="col">mumbai</td>
+                        </tr>
+                        <tr>
+                            <td scope="col">parth</td>
+                            <td scope="col">pujari</td>
+                            <td scope="col">24</td>
+                            <td scope="col">ajinkya@gmail.com</td>
+                            <td scope="col">India</td>
+                            <td scope="col">maharashtra</td>
+                            <td scope="col">pune</td>
+                        </tr>
+                        <tr>
+                            <td scope="col">nitin</td>
+                            <td scope="col">tathe</td>
+                            <td scope="col">24</td>
+                            <td scope="col">ajinkya@gmail.com</td>
+                            <td scope="col">India</td>
+                            <td scope="col">maharashtra</td>
+                            <td scope="col">mumbai</td>
+                        </tr>
+                        <tr>
+                            <td scope="col">vimu</td>
+                            <td scope="col">kale</td>
+                            <td scope="col">24</td>
+                            <td scope="col">ajinkya@gmail.com</td>
+                            <td scope="col">India</td>
+                            <td scope="col">maharashtra</td>
+                            <td scope="col">mumbai</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
         <div class="col-6 ">
                 <h1>Fill the Form Details</h1>
-                <form>
+                <form class="form"  id="form">
                     <div class="form-group">
                         <label for="firstname">First Name</label>
-                        <input type="text" class="form-control" id="firstname">
+                        <input type="text" class="form-control" id="firstname" >
+                        <span id="first" class="text-danger font-weight-bold"></span>
                     </div>    
                     <div class="form-group">
                         <label for="lastname">Last Name</label>
                         <input type="text" class="form-control" id="lastname">
+                        <span id="last" class="text-danger font-weight-bold"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="text" class="form-control" id="age">
+                        <span id="age-span" class="text-danger font-weight-bold"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" class="form-control" id="email">
+                        <span id="email-span" class="text-danger font-weight-bold"></span>
                     </div>
                     <label for="select1">Country</label>
                     <select name="select1" id="select1" class="form-control form-select form-control-lg" onclick="populate(this.id,'select2')">
@@ -53,7 +112,7 @@
                     <select name="select3" id="select3" class="form-control form-select form-control-lg">
                         <option value="">Choose City</option>
                     </select>
-                    <button type="button" class="btn btn-primary btn-lg mt-3" id="btn" onclick="addtotable()">ADD</button>
+                    <button type="button" class="btn btn-primary btn-lg mt-3" id="btn" onclick="validation();addtotable()">ADD</button>
                 </form>
             </div>
         </div>
