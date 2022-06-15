@@ -3,14 +3,12 @@ function validation(){
     let lastname=document.getElementById('lastname').value;
     let age=document.getElementById('age').value;
     let email=document.getElementById('email').value;
-    
-
-    
+        
     if(firstname == ''){
         document.getElementById('first').innerHTML="please dont keep empty";
         return false;
     }
-    if((firstname.length <= 2)|| (firstname.length >20)){
+    if((firstname.length <= 2)|| (firstname.length >30)){
         document.getElementById('first').innerHTML="Inavlid Name";
         return false;
     }
@@ -18,12 +16,11 @@ function validation(){
         document.getElementById('first').innerHTML="Enter only Characters";
         return false;
     }
-
     if(lastname == ''){
         document.getElementById('last').innerHTML="please dont keep empty";
         return false;
     }
-    if((lastname.length <= 2)|| (lastname.length >20)){
+    if((lastname.length <= 2)|| (lastname.length >30)){
         document.getElementById('last').innerHTML="Inavlid Name";
         return false;
     }
@@ -32,7 +29,6 @@ function validation(){
         return false;
     }
     // name validations done
-
     if(age == ''){
         document.getElementById('age-span').innerHTML="please dont keep empty";
         return false;
@@ -45,7 +41,6 @@ function validation(){
         document.getElementById('age-span').innerHTML="Enter Number Only";
         return false;
     }
-
     // email validations
     if(email == ''){
         document.getElementById('email-span').innerHTML="please dont keep empty";
@@ -54,25 +49,14 @@ function validation(){
     if((email.charAt(email.length-4)!='.') && (email.charAt(email.length-3)!='.')){
         document.getElementById('email-span').innerHTML="Inavlid email";
         return false;
-    }
-   
-    
+    }    
 }
-
-
-
-
-
-
-
-
 const firstname=document.getElementById(firstname).value;
 function checkAge(age){
     var age=document.getElementById("age").value;
     if(age<=18 || age>=100){
      alert("not valid age ")
    }
-
 }
 // selectbox
 function populate(s1,s2){
